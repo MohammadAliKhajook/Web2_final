@@ -1,0 +1,42 @@
+    body{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #f9f9fa;
+color: #333;
+}
+/* back to the top */
+.z-top{
+    z-index: 1200;
+}
+ @media (max-width:250px) {
+     .btn-lg{
+         padding: 0.25rem 0.5rem !important;
+         font-size: 0.875rem !important;
+         
+     }
+ }
+ /* navbar */
+ .navbar {
+     box-shadow: 0 2px 4px rgba(0,0,0,0.4)
+
+ }
+ @media (max-width:250px) {
+    .navbar{
+        --bs-navbar-toggler-padding-y: 0.15rem;
+        --bs-navbar-toggler-padding-x: 0.15rem;
+        --bs-navbar-toggler-font-size: 0.8rem;
+        
+    }
+    .navbar .container{
+        padding-left: 3px ;
+        padding-right: 3px ;
+    }
+    .nav-item a{
+        font-size:12px;
+        font-weight: 700;
+    }
+}
+@media (max-width:180px){
+    .hide{
+        display: none;
+    }
+} 
