@@ -1,14 +1,300 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <title>Travel Blog</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/imgs/favicon.png" type="image/x-icon">
+
+    <title>Post Blog</title>
 </head>
-<body>
-    
+
+<body id="top">
+    <!--  Back to top Button -->
+    <a href="#top" class="btn btn-primary btn-lg position-fixed bottom-0 end-0 m-2 z-top"> <i
+            class="fa-solid fa-arrow-up"></i> </a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top ">
+        <div class="container">
+            <!--navbrand  -->
+            <a href="index.html " class="navbar-brand fw-bold hide">MyBlog </a>
+            <!-- navbrandicon -->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expnaded="false" araia-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- collapsible navbar -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto ">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link ">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link ">Travel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link ">Lifestyle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link ">Technology</a>
+                    </li>
+                </ul>
+
+                <form action="#" class="d-flex">
+                    <input type="search" placeholder="Search... " aria-label="Search" class="form-control me-2 hide">
+                    <button type="submit " class="btn btn-outline-dark hide">Search</button>
+                </form>
+            </div>
+
+        </div>
+    </nav>
+ <section class="my-4">
+        <div class="container">
+            <h2 class="mb-4 text-break">Latest Post</h2>
+            <div class="row">
+                <!-- right aside -->
+               <aside class="col-lg-8">
+
+               </aside>
+                <!-- left aside -->
+                <aside class="col-lg-4">
+                    <!-- Categoeries -->
+                    <div class="info-box rounded-4">
+                        <h3 class="text-break mb-3">Categories</h3>
+                        <div class="list-group list-group-flush">
+                            <a href="#"
+                                class="list-group-item list-group-item-action text-break d-flex flex-wrap align-items-center">
+                                Technology <span class="badge bg-primary rounded-pill ms-auto">12</span>
+                            </a>
+                            <a href="#"
+                                class="list-group-item list-group-item-action text-break d-flex flex-wrap align-items-center">
+                                Travel <span class="badge bg-primary rounded-pill ms-auto">8</span>
+                            </a>
+                            <a href="#"
+                                class="list-group-item list-group-item-action text-break d-flex flex-wrap align-items-center">
+                                Food <span class="badge bg-primary rounded-pill ms-auto">6</span>
+                            </a>
+                            <a href="#"
+                                class="list-group-item list-group-item-action text-break d-flex flex-wrap align-items-center">
+                                Lifestyle <span class="badge bg-primary rounded-pill ms-auto">4</span>
+                            </a>
+                            <a href="#"
+                                class="list-group-item list-group-item-action text-break d-flex flex-wrap align-items-center">
+                                Personal <span class="badge bg-primary rounded-pill ms-auto">3</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Popular -->
+                     <div class="info-box rounded-4 shadow">
+                        <h3 class="mb-3 text-break "></h3>
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action px-0 border-0">
+                                <div class="d-flex flex-wrap flex-sm-nowrap">
+                                <img src="/imgs/food1.jpg" class="me-1 rounded img-popular" alt="">
+                                <div>
+                                    <h6 class="text-break">10 Must-Visit Tech Conferences in 2035</h6>
+                                    <p class="text-break">October 1 2025</p>
+                                </div>
+                                </div>
+                            </a>
+                             <a href="#" class="list-group-item list-group-item-action px-0 border-0">
+                                 <div class="d-flex flex-wrap flex-sm-nowrap">
+                                <img src="/imgs/food2.jpg" class="me-1 rounded img-popular" alt="">
+                                <div>
+                                    <h6 class="text-break">The Ultimate Guide to Solo Travel</h6>
+                                    <p class="text-break">August 25, 2034</p>
+                                </div>
+                                </div>
+                            </a>
+                             <a href="#" class="list-group-item list-group-item-action px-0 border-0">
+                                 <div class="d-flex flex-wrap flex-sm-nowrap">
+                                <img src="/imgs/food3.jpg" class="me-1 rounded img-popular" alt="">
+                                <div>
+                                    <h6 class="text-break">5 Simple Recipes for Busy Weeknights5 Simple Recipes for Busy Weeknights</h6>
+                                    <p class="text-break">March 20, 2033</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                     </div>
+                     <!-- About us -->
+                      <div class="info-box rounded-4 shadow">
+                        <h3 class="text-break mb-3">About Myblog</h3>
+                        <div class="text-center">
+                                <img src="/imgs/user6.jpg" class="rounded-circle
+                                author-img" alt="">
+
+                        </div>
+                        <p>Welcome to our Travel Blog!
+                        Founded in 2022, we are dedicated to fueling your wanderlust and guiding you to some of the world’s most incredible destinations. Our team of passionate explorers has traveled to over 100 countries, across all seven continents, sharing authentic experiences and tips to inspire your next adventure.</p>
+                        <a href="index.html" class="btn btn-outline-secondary w-100 text-break">Learn More</a>
+                      </div>
+                      <!-- Subscription to me -->
+                       <div class="info-box shadow rounded-4">
+                        <h3 class="mb-3 text-break">Stay Updated</h3>
+                        <p class="text-break text-secondary">Get early access to new drops and exclusive deals.</p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-secondary text-dark w-100 rounded-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Launch demo modal
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header border-0">
+                                    <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Join Our News letter</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body pt-0">
+                                    <p class="text-secondary">We respect your privacy. Unsubscribe anytime.</p>
+                                    <form action="">
+                                        <div class="">
+                                            <input type="email" placeholder="you@example.com" class="form-control rounded-pill ">
+                                        </div>
+                                        <button type="submit" class="w-100 btn btn-primary mt-3 rounded-3">Subscribe Now</button>
+                                    </form>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
+                       </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Foooter -->
+    <footer>
+        <div class="container">
+            <!-- footer list link -->
+            <div class="row">
+                <div class="col-12 col-lg-4 mb-lg-0 mb-4">
+                    <p class="h5 mb-4 text-break footer-heading"><span
+                            class="fas fa-earth-americas me-1 text-uppercase "></span>MYBLOG</p>
+                    <p class="text-break footer-p"> Your gateway to unforgettable adventures and authentic travel
+                        experiences. Discover the world's most breathtaking destinations with our expert guides and
+                        travel tips. </p>
+                    <div class="container mt-4 social-icons   ">
+                        <a href="#"><span class="fab fa-facebook"></span></a>
+                        <a href="#"><span class="fab fa-instagram"></span></a>
+                        <a href="#"><span class="fab fa-twitter"></span></a>
+                        <a href="#"><span class="fab fa-pinterest"></span></a>
+                        <a href="#"><span class="fa-brands fa-x-twitter"></i></span></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2  mb-md-0 mb-4">
+                    <p class="h5 mb-4 text-break text-uppercase footer-heading">quick links</p>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-2" >
+                            <a href="index.html" class="text-white text-break">Home</a>
+                        </li>
+                         <li class="mb-2" >
+                            <a href="#" class="text-white text-break">Destinations</a>
+                        </li>
+                         </li>
+                         <li class="mb-2" >
+                            <a href="#" class="text-white text-break">Blog</a>
+                        </li>
+                        <li class="mb-2" >
+                            <a href="#" class="text-white text-break">Gallery</a>
+                        </li>
+                         <li class="mb-2" >
+                            <a href="#" class="text-white text-break">About US</a>
+                        </li>
+                        
+                    </ul>
+
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3  mb-md-0 mb-4">
+                     <p class="h5 mb-4 text-break text-uppercase footer-heading">popular destinations</p>
+                      <ul class="list-unstyled">
+                        <li class="mb-2" >
+                            <a href="index.html" class="text-white text-break">Bali, Indonesia</a>
+                        </li>
+                         <li class="mb-2" >
+                            <a href="#" class="text-white text-break">Santorini, Greece</a>
+                        </li>
+                         </li>
+                         <li class="mb-2" >
+                            <a href="#" class="text-white text-break">Kyoto, Japan</a>
+                        </li>
+                        <li class="mb-2" >
+                            <a href="#" class="text-white text-break">Machu Picchu, Peru</a>
+                        </li>
+                         <li class="mb-2" >
+                            <a href="#" class="text-white text-break">Barcelona, Spain</a>
+                        </li>
+                        
+                    </ul>
+
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3  mb-md-0 mb-4">
+                     <p class="h5 mb-4 text-break text-uppercase footer-heading">categories</p>
+                      <ul class="list-unstyled">
+                        <li class="mb-2" >
+                            <a href="#" class="text-white text-break">Technology</a>
+                        </li>
+                         <li class="mb-2" >
+                            <a href="#" class="text-white text-break">Travel</a>
+                        </li>
+                         </li>
+                         <li class="mb-2" >
+                            <a href="#" class="text-white text-break">Food</a>
+                        </li>
+                        <li class="mb-2" >
+                            <a href="#" class="text-white text-break">Personal</a>
+                        </li>
+                         <li class="mb-2" >
+                            <a href="#" class="text-white text-break">Personal</a>
+                        </li>
+                        
+                    </ul>
+
+                </div>
+            </div>
+            <hr class="my-4">
+
+            <div class="row">
+                <div class="col-md-7 mb-md-0 mb-3">
+                    <p class="footer-p">&copy; MyWeblog. All rights reserved</p>
+                </div>
+                  <div class="col-md-5 ">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" id="" class="text-break text-white"> Privacy Policy</a>
+                        </li>
+                        <li class="list-inline-item"> |</li>
+
+                            <li class="list-inline-item">
+                            <a href="#" id="" class="text-break text-white"> Terms & Conditions</a>
+                        </li>
+                        <li class="list-inline-item"> |</li>
+
+
+                            <li class="list-inline-item">
+                            <a href="#" id="" class="text-break text-white">Sitemap</a>
+                        </li>
+                    
+
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
 </body>
-</html>
+
+</html> -->

@@ -1,130 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="/imgs/favicon.png" type="image/x-icon">
 
     <title>Travel Blog</title>
 </head>
+
 <body id="top">
     <!--  Back to top Button -->
-    <a href="#top" class="btn btn-primary btn-lg position-fixed bottom-0 end-0 m-2 z-top"> <i class="fa-solid fa-arrow-up"></i> </a>
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg bg-white sticky-top ">
-   <div class="container">
-       <!--navbrand  -->
-    <a href="index.html " class="navbar-brand fw-bold hide">MyBlog </a>
-    <!-- navbrandicon -->
-    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expnaded="false" araia-label="Toggle Navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- collapsible navbar -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto ">
-            <li class="nav-item">
-                <a href="index.html" class="nav-link active">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="blog.html" class="nav-link ">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a href="index.html" class="nav-link ">Travel</a>
-            </li>
-            <li class="nav-item">
-                <a href="index.html" class="nav-link ">Lifestyle</a>
-            </li>
-            <li class="nav-item">
-                <a href="index.html" class="nav-link ">Technology</a>
-            </li>
-        </ul>
+    <a href="#top" class="btn btn-primary btn-lg position-fixed bottom-0 end-0 m-2 z-top"> <i
+            class="fa-solid fa-arrow-up"></i> </a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top ">
+        <div class="container">
+            <!--navbrand  -->
+            <a href="index.html " class="navbar-brand fw-bold hide">MyBlog </a>
+            <!-- navbrandicon -->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expnaded="false" araia-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- collapsible navbar -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto ">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link ">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link ">Travel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link ">Lifestyle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link ">Technology</a>
+                    </li>
+                </ul>
 
-        <form action="#" class="d-flex">
-            <input type="search" placeholder="Search... " aria-label="Search" class="form-control me-2 hide">
-            <button type="submit " class="btn btn-outline-dark hide">Search</button>
-        </form>
-    </div>
-
-   </div>
-</nav>
-
-
-<!-- Foooter -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-3  mb-lg-0  ">
-                <p class="h5 text-capitalize mb-4 mt-3 ">
-                    <i class="fas fa-earth-america me-1 "></i>
-                    myBlog
-                </p>
-                <p class="footer-p">
-                Your gateway to unforgettable adventures and authentic travel experiences. Discover the world's most breathtaking destinations with our expert guides and travel tips.</p>
-                <div class="mt-4 social-icons ">
-                        <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
-                        <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
-                        <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
-                        <a href="#"> <i class="fa-brands fa-pinterest"></i> </a>
-                        <a href="#"> <i class="fa-brands fa-youtube"></i> </a>
-                    </div>
+                <form action="#" class="d-flex">
+                    <input type="search" placeholder="Search... " aria-label="Search" class="form-control me-2 hide">
+                    <button type="submit " class="btn btn-outline-dark hide">Search</button>
+                </form>
             </div>
-            <div class="col-12 col-lg-3   ">
-                <p class="h6 text-uppercase mt-3 ">popular destinations</p>
-                        <ul class="text-white list-unstyled text-capitalize  ">
-                            <li class="mb-3 mt-3"><a href="#" class="text-decoration-none  ">Bali, Indonesia</a></li>
-                            <li class="mb-3"><a href="#" class="text-decoration-none ">Santorini, Greece</a></li>
-                            <li class="mb-3"><a href="#" class="text-decoration-none ">Kyoto, Japan</a></li>
-                            <li class="mb-3"><a href="#" class="text-decoration-none ">Machu Picchu, Peruy</a></li>
-                            <li class="mb-3"><a href="#" class="text-decoration-none ">Barcelona, Spain</a></li>
-                        </ul>
-            </div>
-            <div class="col-12 col-lg-3 p-3 "><p class="h6 text-uppercase ">quick link</p>
-                        <ul class="text-white list-unstyled text-capitalize  ">
-                            <li class="mb-3 mt-3"><a href="#" class="text-decoration-none  ">home</a></li>
-                            <li class="mb-3"><a href="#" class="text-decoration-none ">destinations</a></li>
-                            <li class="mb-3"><a href="#" class="text-decoration-none ">blog</a></li>
-                            <li class="mb-3"><a href="#" class="text-decoration-none ">gallery</a></li>
-                            <li class="mb-3"><a href="#" class="text-decoration-none ">about us</a></li>
-                        </ul></div>
-            <div class="col-12 col-lg-3 "><p class="h6 text-uppercase ">CATEGORIES</p>
-                        <ul class="text-white list-unstyled text-capitalize  ">
-                            <li class="mb-3 mt-3"><a href="#" class="text-decoration-none  ">Technologies</a></li>
-                            <li class="mb-3"><a href="#" class="text-decoration-none ">Travel</a></li>
-                            <li class="mb-3"><a href="#" class="text-decoration-none ">Food</a></li>
-                            <li class="mb-3"><a href="#" class="text-decoration-none ">Lifestyle</a></li>
-                            <li class="mb-3"><a href="#" class="text-decoration-none ">Personal</a></li>
-                        </ul></div>
+
         </div>
-        <hr>
-<div class="row">
-    <div class="col-12 col-lg-6 p-3 ">
-        <p class="text-break mb-0 footer-p"> ©  PamchBlog. All rights reserved. </p>
-    </div>
-    <div class="col-12 col-lg-6  p-3">
-        <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a href="#" class="text-white text-break">Privacy Policy</a>
-                        </li>
-                        <li class="list-inline-item"> | </li>
-                        <li class="list-inline-item">
-                            <a href="#" class="text-white text-break"> Terms &amp; Conditions</a>
-                        </li>
-                        <li class="list-inline-item"> | </li>
-                        <li class="list-inline-item">
-                            <a href="#" class="text-white text-break">  Sitemap</a>
-                        </li>
-                    </ul>
-    </div>
+    </nav>
 
-</div>
-       
+    <!-- Hero Section -->
+    <section class="text-center hero text-white">
+        <div class="container text ">
+            <p class=" h1 fw-bold  text-break ">Explore the World with Us</p>
+            <p class="text-break display-6  fs-5 mb-4 ">Discover breathtaking destinations, travel tips, and
+                unforgettable experiences</p>
+            <div class="d-flex justify-content-center gap-2 flex-wrap">
+                <button class="btn btn-primary  btn-lg text-break">Expolre Destionations</button>
+                <button class="btn btn-success  btn-lg text-break">Read Travel Stories</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section>
+        <div class="container py-5">
+            <div class="row p-0">
+                <div class="col-lg-6 mb-lg-0 mb-4">
+                    <img src="/imgs/place5.jpg" class="img-fluid rounded-3" width="100%" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4">About MyBlog</h2>
+                    <p class="text-break">
+                        Founded in 2022, we are dedicated to inspiring wanderlust and helping travelers discover the
+                        world’s most incredible destinations. Our team of passionate explorers has visited over 100
+                        countries across all seven continents, bringing firsthand experience and authentic insights to
+                        every story we share.
+                    </p>
+                    <p class="text-break">We believe travel has the power to transform lives, broaden perspectives, and
+                        create meaningful connections between people and cultures. Through our blog, destination guides,
+                        and photography, we share the beauty and diversity of the world, encouraging travelers to
+                        explore with curiosity and respect.</p>
+
+
+                    <p>Another paragraph, same tone. I’ll keep it consistent and mercifully uncluttered.
+
+                        Whether you’re a seasoned globetrotter or planning your first international adventure, we’re
+                        here to offer authentic insights, practical tips, and engaging stories to help you travel
+                        smarter and stay inspired.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Destionations -->
+    <section class="py-4">
+        <div class="container ">
+            <h2 class="mb-5 text-break">Latest Destinations</h2>
+
+            <div class="row g-3">
+                <div class="col-12 col-md-4 ">
+                    <div class="card position-relative shadow">
+                        <span class="c-badge">Popular</span>
+                        <img src="/imgs/beach4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tokyo ,Japan</h5>
+                            <p class="card-text">Experience the serenity of ancient temples and traditional gardens
+                                alongside the fast-paced energy of modern life in Tokyo, Japan.</p>
+                            <a href="travel-post.html" class="btn btn-primary text-break" target="_blank">Discover
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd Card -->
+                <div class="col-12 col-md-4 ">
+                    <div class="card shadow">
+
+                        <img src="/imgs/beach5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tokyo ,Japan</h5>
+                            <p class="card-text">Experience the serenity of ancient temples and traditional gardens
+                                alongside the fast-paced energy of modern life in Tokyo, Japan.</p>
+                            <a href="travel-post.html" class="btn btn-primary text-break" target="_blank">Discover
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd Card -->
+                <div class="col-12 col-md-4 ">
+                    <div class="card shadow ">
+
+                        <img src="/imgs/beach7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tokyo ,Japan</h5>
+                            <p class="card-text">Experience the serenity of ancient temples and traditional gardens
+                                alongside the fast-paced energy of modern life in Tokyo, Japan.</p>
+                            <a href="travel-post.html" class="btn btn-primary text-break" target="_blank">Discover
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mt-4 text-center">
+                <a href="#" class="btn btn-outline-primary text-break">View All Destionations</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- Team mMembers  -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="fw-bold mb-2 text-break">Meet This Website Team Members</h2>
+    <p class="text-break mb-4 T-p">
+      The imaginative team that shapes the world of blogging.
+    </p>
+
+    <div class="row g-4">
+      
+      <!-- Team member -->
+      <div class="col-12 col-md-4">
+        <div class="bg-white border shadow rounded-3 p-4 text-center">
+          <img src="/imgs/user6.jpg" class="img-fluid rounded-3" alt="">
+
+          <div class="mt-3">
+            <h2 class="fs-5">Mohammad Rahimi</h2>
+            <p class="text-secondary">Social Network Manager</p>
+          </div>
+
+          <div class="d-flex justify-content-center gap-3 s-icons">
+            <a href="#"><i class="fa-brands fa-x-twitter text-white fs-3"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook text-white fs-3"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram text-white fs-3"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin text-white fs-3"></i></a>
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="col-12 col-md-4">
+        <div class="bg-white border shadow rounded-3 p-4 text-center">
+          <img src="/imgs/user6.jpg" class="img-fluid rounded-3" alt="">
+          <div class="mt-3">
+            <h2 class="fs-5">Mohammad Rahimi</h2>
+            <p class="text-secondary">Social Network Manager</p>
+          </div>
+          <div class="d-flex justify-content-center gap-3 s-icons">
+            <a href="#"><i class="fa-brands fa-x-twitter text-white fs-3"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook text-white fs-3"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram text-white fs-3"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin text-white fs-3"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="bg-white border shadow rounded-3 p-4 text-center">
+          <img src="/imgs/user6.jpg" class="img-fluid rounded-3" alt="">
+          <div class="mt-3">
+            <h2 class="fs-5">Mohammad Rahimi</h2>
+            <p class="text-secondary">Social Network Manager</p>
+          </div>
+          <div class="d-flex justify-content-center gap-3 s-icons">
+            <a href="#"><i class="fa-brands fa-x-twitter text-white fs-3"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook text-white fs-3"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram text-white fs-3"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin text-white fs-3"></i></a>
+          </div>
+        </div>
+      </div>
+
     </div>
-</footer>
-<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </div>
+</section>
+<!-- gallery section -->
+ <section class="py-5">
+    <div class="container">
+        <h2 class="text-break mb-4">Travel Photo Gallery</h2>
+        <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-4 gallery-Pics">
+              <div class="rounded-4">
+                <img src="/imgs/agric1.jpg" height="250px" width="100%" class="rounded-4"  alt="">
+              </div>
+            </div>
+               <div class="col-12 col-md-6 col-lg-4 gallery-Pics">
+              <div class="rounded-4">
+                <img src="/imgs/beach5.jpg" height="250px" width="100%" class="rounded-4"  alt="">
+              </div>
+            </div>
+               <div class="col-12 col-md-6 col-lg-4 gallery-Pics">
+              <div class="rounded-4">
+                <img src="/imgs/beach3.jpg" height="250px" width="100%" class="rounded-4"  alt="">
+              </div>
+            </div>
+               <div class="col-12 col-md-6 col-lg-4 gallery-Pics ">
+              <div class="rounded-4">
+                <img src="/imgs/beach7.jpg" height="250px" width="100%" class="rounded-4"  alt="">
+              </div>
+            </div>
+               <div class="col-12 col-md-6 col-lg-4 gallery-Pics ">
+              <div class="rounded-4">
+                <img src="/imgs/beach1.jpg" height="250px" width="100%" class="rounded-4"  alt="">
+              </div>
+            </div>    <div class="col-12 col-md-6 col-lg-4 gallery-Pics" >
+              <div class="rounded-4">
+                <img src="/imgs/beach2.jpg" height="250px" width="100%" class="rounded-4"  alt="">
+              </div>
+            </div> 
+        </div>
+    </div>
+ </section>
+<!-- contact us -->
+ <section class="container my-3">
+        <h2 class="mb-3 text-break">Get In Touch</h2>
+        <div class="row">
+           <div class="col-md-5 shadow p-4 rounded-3 mb-4 mb-md-0">
+    <h5 class="mb-4 text-break">Contact Information</h5>
+
+    <p class="text-break">
+        Have questions about destinations, travel tips, or collaboration opportunities?
+        Reach out anytime.
+    </p>
+
+    <p class="text-break mb-2">
+        <i class="fa-solid fa-location-dot me-2"></i>
+        Your City, Your Country
+    </p>
+
+    <p class="text-break mb-2">
+        <i class="fa-solid fa-phone me-2"></i>
+        +XX XXX XXX XXXX
+    </p>
+
+    <p class="text-break mb-0">
+        <i class="fa-solid fa-envelope me-2"></i>
+        yourname@email.com
+    </p>
+</div>
+
+            <div class="col-md-7 contact">
+                <iframe class="w-100 h-100 shadow rounded-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85972.17369862243!2d-122.18220061022586!3d47.672175499477554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54900cad2000ee23%3A0x5e0390eac5d804f2!2sRedmond%2C%20WA%2C%20USA!5e0!3m2!1sen!2sng!4v1748796959516!5m2!1sen!2sng" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- Foooter -->
+    <footer>
+        <div class="container">
+            <!-- footer list link -->
+            <div class="row">
+                <div class="col-12 col-lg-4 mb-lg-0 mb-4">
+                    <p class="h5 mb-4 text-break footer-heading"><span
+                            class="fas fa-earth-americas me-1 text-uppercase "></span>MYBLOG</p>
+                    <p class="text-break footer-p"> Your gateway to unforgettable adventures and authentic travel
+                        experiences. Discover the world's most breathtaking destinations with our expert guides and
+                        travel tips. </p>
+                    <div class="container mt-4 social-icons   ">
+                        <a href="#"><span class="fab fa-facebook"></span></a>
+                        <a href="#"><span class="fab fa-instagram"></span></a>
+                        <a href="#"><span class="fab fa-twitter"></span></a>
+                        <a href="#"><span class="fab fa-pinterest"></span></a>
+                        <a href="#"><span class="fa-brands fa-x-twitter"></i></span></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2  mb-md-0 mb-4">
+                    <p class="h5 mb-4 text-break text-uppercase footer-heading">quick links</p>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="index.html" class="text-white text-break">Home</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white text-break">Destinations</a>
+                        </li>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white text-break">Blog</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white text-break">Gallery</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white text-break">About US</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3  mb-md-0 mb-4">
+                    <p class="h5 mb-4 text-break text-uppercase footer-heading">popular destinations</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="index.html" class="text-white text-break">Bali, Indonesia</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white text-break">Santorini, Greece</a>
+                        </li>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white text-break">Kyoto, Japan</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white text-break">Machu Picchu, Peru</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white text-break">Barcelona, Spain</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3  mb-md-0 mb-4">
+                    <p class="h5 mb-4 text-break text-uppercase footer-heading">categories</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#" class="text-white text-break">Technology</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white text-break">Travel</a>
+                        </li>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white text-break">Food</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white text-break">Personal</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white text-break">Personal</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <hr class="my-4">
+
+            <div class="row">
+                <div class="col-md-7 mb-md-0 mb-3">
+                    <p class="footer-p">&copy; MyWeblog. All rights reserved</p>
+                </div>
+                <div class="col-md-5 ">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" id="" class="text-break text-white"> Privacy Policy</a>
+                        </li>
+                        <li class="list-inline-item"> |</li>
+
+                        <li class="list-inline-item">
+                            <a href="#" id="" class="text-break text-white"> Terms & Conditions</a>
+                        </li>
+                        <li class="list-inline-item"> |</li>
+
+
+                        <li class="list-inline-item">
+                            <a href="#" id="" class="text-break text-white">Sitemap</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
 </body>
+
 </html>

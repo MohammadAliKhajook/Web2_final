@@ -1,88 +1,449 @@
-    body{
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-background-color: #f9f9fa;
-color: #333;
-}
-/* back to the top */
-.z-top{
-    z-index: 1200;
-}
- @media (max-width:250px) {
-     .btn-lg{
-         padding: 0.25rem 0.5rem !important;
-         font-size: 0.875rem !important;
-         
-     }
- }
- /* navbar */
- .navbar {
-     box-shadow: 0 2px 4px rgba(0,0,0,0.4)
-
- }
- @media (max-width:250px) {
-    .navbar{
-        --bs-navbar-toggler-padding-y: 0.15rem;
-        --bs-navbar-toggler-padding-x: 0.15rem;
-        --bs-navbar-toggler-font-size: 0.8rem;
-        
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f9f9fa;
+        color: #333;
     }
-    .navbar .container{
-        padding-left: 3px ;
-        padding-right: 3px ;
+
+    .z-top {
+        z-index: 1200;
     }
-    .nav-item a{
-        font-size:12px;
-        font-weight: 700;
+
+    @media (max-width:250px) {
+        .btn-lg {
+            padding: 0.25rem 0.5rem !important;
+            font-size: 0.875rem !important;
+
+        }
     }
-}
-@media (max-width:180px){
-    .hide{
-        display: none;
+
+    /* navbar */
+    .navbar {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4)
     }
-} 
-footer {
-    background-color: #021d37;
-    color: #fff;
-    padding: 3rem 0;
-    margin-top: 3rem;
-    font-size: 15px;
-}
 
-/* footer paragraph text */
-.footer-p {
-    font-size: 14px;
-    line-height: 1.6;
-}
+    @media (max-width:180px) {
+        .hide {
+            display: none;
+        }
+    }
 
-/* social icons */
-.social-icons a {
-    text-decoration: none;
-    color: #fff;
-    margin-right: 14px;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-}
+    /* footer */
+    footer {
+        background-color: #021d37;
+        color: white;
+        padding: 48px 0;
+        margin-top: 48px;
+    }
 
-.social-icons a:hover {
-    color: #e006ca;
-}
+    .footer-heading {
+        font-size: 15px;
+    }
 
-/* footer links */
-footer ul li a {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 400;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.3s ease, color 0.3s ease;
-}
+    .footer-p {
+        font-size: 14px;
+    }
 
-footer ul li a:hover {
-    border-bottom-color: #fff;
-}
+    footer ul li a {
+        text-decoration: none;
+        font-size: 13px;
+    }
 
-/* optional: safer text breaking without overriding Bootstrap */
-.footer-text-break {
-    word-wrap: break-word;
-    word-break: break-word;
-}
+    footer ul li a {
+        text-decoration: none;
+    }
+
+    footer .social-icons a:hover {
+        color: rgb(187, 68, 153);
+    }
+
+    .social-icons a {
+        color: white;
+        margin-right: 14px;
+        font-size: 1.5rem;
+    }
+
+    .list-inline-item a:hover {
+        text-decoration: underline;
+    }
+
+
+
+
+    /* hero section */
+    .hero {
+        min-height: 80vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/imgs/place6.jpg');
+        background-position: center;
+        background-size: cover;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        /* padding-block:8rem ; */
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    /* Lastest Destionations Card */
+    .c-badge {
+
+        background-color: #021d37;
+        color: white;
+        padding: 8px;
+        border-radius: 20px;
+        font-weight: 600;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index: 10;
+    }
+
+    .card {
+        border: none;
+        margin-bottom: 1.5rem;
+        border-radius: 0.5rem;
+        transition: all 0.3s;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .s-icons a {
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .s-icons a i {
+        font-size: 20px;
+        background-color: #021d37;
+        border-radius: 5px;
+
+        text-align: center;
+
+
+    }
+
+    /* team members */
+    .T-p {
+        font-size: 21px;
+        font-weight: 300;
+    }
+
+    /* gallery section */
+
+    .gallery-Pics {
+        transition: transform 0.3s;
+    }
+
+    .gallery-Pics:hover {
+        transform: scale(1.03);
+    }
+
+    /* media quaries by me! */
+    @media (max-width=250px) {
+        .navbar {
+            --bs-navbar-toggler-padding-y: 0.15rem;
+            --bs-navbar-toggler-padding-x: 0.15rem;
+            --bs-navbar-toggler-font-size: 0.8rem;
+
+        }
+
+        .navbar .container {
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+
+        .nav-item a {
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .footer-p {
+            font-size: 12.5px;
+        }
+
+        .footer-p,
+        footer a {
+            font-size: 11.5px;
+        }
+
+        .social-icons {
+            margin-right: 7px;
+            font-size: 1rem;
+        }
+
+        .hero {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .hero p {
+            font-size: 13px;
+        }
+
+        .btn {
+            font-size: 11px;
+        }
+
+        /* about us section */
+        .container h2 {
+            font-size: 13px !important;
+        }
+
+        .container p {
+            font-size: 12px !important;
+        }
+
+        .card {
+            padding-left: 0.5;
+            padding-left: 0.5;
+
+        }
+
+        .container h5 {
+            font-size: 12px;
+        }
+    }
+
+    /*+============================ Travel-Post Page================================ */
+    /* === Blog Header === */
+    .Blog-Header {
+        background-color: #021d37;
+    }
+
+    /*  Description Header with Background Image === */
+    .des-header {
+        position: relative;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        background-image: url('/imgs/place8.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    /* Overlay for better text readability */
+    .des-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+    }
+
+    /* Title and subtitle inside the header */
+    .des-title {
+        position: relative;
+        z-index: 1;
+    }
+
+    .des-title h2,
+    .des-title p {
+        font-size: 3rem;
+    }
+
+
+    @media (max-width: 250px) {
+        .Blog-Header .container p:nth-child(2) {
+            font-size: 14px !important;
+        }
+
+        .des-title h2,
+        .des-title p {
+            font-size: 13px;
+        }
+    }
+
+    /* info-box */
+    .info-box {
+        padding: 0.8rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .info-box h3 {
+        font-size: 18px;
+        color: #021d37;
+        font-weight: 600;
+
+    }
+
+    /* i reset the default li style of boostrap with this  */
+    .info-box ul li {
+        background-color: transparent !important;
+    }
+
+    @media (max-width:250) {
+        .info-box {
+            padding: 0.3rem;
+        }
+
+        .info-box h3 {
+            font-size: 12px;
+        }
+    }
+
+    /* where tot stay */
+    .card-h .card-img-top {
+        height: 200px;
+        object-fit: cover;
+        object-position: center top;
+        width: 100%;
+    }
+
+    @media (max-width:250) {
+        .card-h {
+            height: 120px;
+        }
+    }
+
+    /* photo gallery */
+    .gallery-info {
+        height: 150px;
+        object-fit: cover;
+    }
+
+
+    /*==== blog page */
+    .blog-Post {
+        background-color: #fff;
+        overflow: hidden;
+        border-radius: 0.5rem;
+        transition: transform 0.3s;
+    }
+
+    .blog-Post img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .blog-Post:hover {
+        transform: translateY(-5px);
+    }
+
+    @media (max-widrh:250) {
+        .blog-Post h3 {
+            font-size: 13px;
+        }
+    }
+
+    /* pagination */
+    .pg-nav a {
+        margin-right: 5px;
+        text-decoration: none;
+        border: 1px solid black;
+        color: #021d37;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+
+    .pg-nav a:first-child,
+    .pg-nav a:last-child {
+        border-radius: 0;
+    }
+
+    .pg-nav a:hover {
+        background-color: #021d37 !important;
+        color: white !important;
+        border-color: white;
+    }
+
+    @media (max-width:250px) {
+        .page-item {
+            font-size: 10px;
+        }
+
+        .page-link {
+            padding: 0.4rem !important;
+            font-size: 11px !important;
+        }
+
+        .pagination {
+            padding: 0.2rem !;
+        }
+    }
+
+    @media (min-width: 0px) and (max-width: 250px) {
+        .pagination {
+            display: flex;
+            flex-direction: column !important;
+        }
+
+        .pagination li {
+            margin-bottom: 4px;
+            width: 50px;
+            border-radius: 40px;
+
+
+        }
+    }
+
+    /* Featured post */
+    .blog-featured {
+        height: 500px;
+        overflow: hidden;
+        transition: transform 0.3s;
+        border-radius: 0.5rem;
+
+    }
+
+    .blog-featured:hover {
+        transform: translateY(-5px);
+    }
+
+    .blog-featured img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .blog-featured h2 {
+        font-size: 20px;
+    }
+
+    .img-size {
+        width: 35px;
+        height: 35px;
+    }
+
+    .category-badge {
+        position: absolute;
+        left: 80%;
+        top: 10px;
+        z-index: 10;
+    }
+
+    @media (max-width:250px) {
+        .blog-featured {
+            height: 350px;
+        }
+
+        .blog-featured h2 {
+            font-size: 12px;
+        }
+    }
+
+    /* popluar posts */
+    .img-popular {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+    }
+
+    .info-box div a {
+        background-color: transparent !important;
+    }
+
+    /* about */
+    .author-img {
+        height: 120px;
+        width: 120px;
+        object-fit: cover;
+    }
